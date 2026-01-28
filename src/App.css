@@ -1,0 +1,268 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.menu-container {
+  font-family: Arial, sans-serif;
+  position: relative;
+  display: inline-block;
+}
+
+.menu {
+  position: relative;
+}
+
+.menu-button {
+  background-color: #333;
+  color: white;
+  padding: 5px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.menu-button:hover {
+  background-color: #444;
+}
+
+.dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: rgb(246, 237, 237);
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 200px;
+}
+
+.dropdown ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dropdown li {
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.dropdown li:hover {
+  background-color: #333;
+}
+
+.dropdown .highlight {
+  color: red;
+  font-weight: bold;
+}
+
+.flex-bar {
+  display: flex;
+  justify-content: flex-start; 
+  align-items: center; 
+  background-color: #333;
+  padding: 10px; 
+  color: white; 
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  height: 60px; 
+  gap: 5px;
+}
+
+.flex-item {
+  padding: 10px 20px; 
+  cursor: pointer;
+}
+
+.flex-item:hover {
+  background-color: #444; 
+  border-radius: 5px; 
+}
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  gap: 5px;
+  background-color: #333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  z-index: 1000;
+  height: 40px;
+}
+
+/* Navbar left items */
+.navbar-left {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.navbar-left h4 {
+  color: white;
+  font-size: 16px;
+  margin: 0 15px;
+  cursor: pointer;
+}
+
+.navbar-left h4:hover {
+  text-decoration: underline;
+}
+.logout-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+   margin-right: 25px;
+  color: white;
+  font-size: 16px;
+}
+
+.logout-button svg {
+  margin-right: 15px;
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #16163d;
+  flex-direction: column;
+}
+
+/* Login div styling */
+.login-div {
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+/* Input fields */
+.login-div input {
+  width: 90%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.login-buttons button,
+.aims-login {
+  padding: 10px;
+  margin: 10px 1%;
+  border: none;
+  background-color: #4ede79;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: 600;
+}
+
+.login-buttons button:hover,
+.aims-login:hover {
+  background-color: #38a358;;
+}
+
+/* Terms and footer text */
+.terms {
+  font-size: 12px;
+  color: #ff0000;
+  font-weight: 500;
+}
+
+.footer {
+  font-size: 25px;
+  color: #ffffff;
+  margin-top: 20px;
+  font-weight: bold;
+}
+.login-form{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+/* General styling for the login options page */
+.login-options-container {
+  padding: 20px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  
+}
+.login-option{
+  border: 1px solid #c5c5c5;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 20px;
+  min-width: 300px;
+  width: 50%;
+  background-color: #ffffffff;
+}
+
+.login-option h4 {
+  color: #333;
+}
+
+.login-option ul {
+  padding-left: 30px;
+}
+
+.login-option ul li {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #555;
+}
+.admin-dropdown {
+  position: relative;
+  cursor: pointer;
+
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #f1f1f1;
+  min-width: 200px;
+  width: auto; 
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1000000;
+  display: block;     
+  border-radius: 5px;
+  padding: 0;
+
+}
+
+.dropdown-menu div {
+  padding: 10px;
+  color: #000000;
+  cursor: pointer;
+}
+
+.dropdown-menu :hover {
+  background-color: #ddd;
+  border-radius: 5px;
+}
+.options h2{
+  color: #202265;
+  text-align: center;
+}
+.addForm{
+  background-color: #fff;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: grid;
+  gap: 15px;
+  max-width: 600px;
+
+}
